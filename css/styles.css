@@ -995,8 +995,8 @@ ul {
   content: "";
   width: 16px;
   height: 15px;
-  border: 3px solid var(--main-txt);
-  border-radius: 3px;
+  border: 2px solid var(--main-txt);
+  border-radius: 1px;
   display: block;
   transition: background-color 250ms var(--timing-function);
 }
