@@ -57,19 +57,62 @@
               <h1 class="hero-title">
                   Эффективные решения для вашего бизнеса
               </h1>
-             <button data-modal-open type="button" class="hero-button">Заказать услугу</button>
+              <!--модальне вікно-->
+             <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
           </div>
-      </section>
-      <!--модальне вікно-->
-      <div class="backdrop is-hidden" data-modal>
+           <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-              <button data-modal-close class="modal-close-btn" type="button">
+              <button class="modal-close-btn" type="button" data-modal-close>
                 <svg width="20" height="20">
                     <use href="./images/close-icon.svg#icon-close"></use>
                 </svg>
               </button>
+
+               <p class="modal-title">
+                Залиште свої дані, ми вам передзвонимо
+              </p>
+              <form class="modal-form">
+                <div>
+                  <label for="user-name"><span class="label-form"> Ім'я</span></label>
+                  <div class="input-wrap">
+                    <input type="text" class="form-input" 
+                      name="user-name" id="user-name" placeholder=""/>
+                    <svg class="icon-input icon-person-black" width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-person-black"></use>
+                    </svg>
+                  </div>
+                  <label for="user-tel"><span class="label-form"> Телефон</span></label>
+                  <div class="input-wrap">
+                    <input type="text" class="form-input"
+                      name="user-tel" id="user-tel" minlength="10" placeholder=""/>
+                    <svg class="icon-input icon-phone-black" width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-phone-black" ></use>
+                    </svg>
+                  </div>
+                  <label for="user-mail"><span class="label-form"> Пошта</span></label>
+                  <div class="input-wrap">
+                    <input type="text" class="form-input"
+                      name="user-mail" id="user-mail" placeholder=""/>
+                    <svg class="icon-input icon-email-black" width="18px" height="18px">
+                      <use href="./images/icons.svg#icon-email-black"></use>
+                    </svg>
+                  </div>
+                  <label for="coments"><span class="label-form"> Коментар</span></label>
+                  <textarea
+                    name="coments" id="coments" class="form-input coment" placeholder="Введіть текст"></textarea>
+                  <input type="checkbox" class="check-input visually-hidden" 
+                    name="acept" value="true" id="acept" placeholder=""/>
+                  <label for="acept" class="acept-text">Погоджуюся з розсилкою та приймаю <a class="acept-contract" href="#">Умови договору</a></label>
+                  <button type="submit" class="form-button">
+                    Відправити
+                  </button>
+                </div>
+              </form>
+
           </div>
       </div>
+      </section>
+     
        <!--Особливості-->
       <section class="about section-about ">
           <div class="container">
